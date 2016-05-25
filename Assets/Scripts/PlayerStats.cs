@@ -4,8 +4,10 @@ using System.Collections;
 public class PlayerStats : MonoBehaviour {
     public GameObject player;
     public GameObject continuePanel;
+   // public GameObject medicine;
+    public float stressRate;
     bool pausescript;
-    private float Stresslevel = 0f;
+    public float Stresslevel = 0f;
     private float maxStresslevel = 100f;
     private bool Paused = false;
     
@@ -22,7 +24,7 @@ public class PlayerStats : MonoBehaviour {
 
         if (Paused == false && !pausescript)//if this is false
         {
-            Stresslevel += 1f; //every sec the player stress level is increased by 0.5f
+            Stresslevel += stressRate; //every sec the player stress level is increased by 0.5f
             Debug.Log(Stresslevel);
         }
 
@@ -69,6 +71,5 @@ public class PlayerStats : MonoBehaviour {
         //etc
         */
     }
-
 
 }

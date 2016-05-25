@@ -6,6 +6,8 @@ TagManager:
   tags:
   - stress
   - mid_stress
+  - FirstPersonCamera
+  - medicine
   layers:
   - Default
   - TransparentFX

@@ -11,6 +11,7 @@ GameObject:
   - 54: {fileID: 5421830}
   - 136: {fileID: 13649468}
   - 114: {fileID: 11430858}
+  - 114: {fileID: 11485376}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -54,8 +55,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100590}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: -0.00000016292068}
-  m_LocalPosition: {x: -6.517194, y: 1, z: -0.8734007}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071067}
+  m_LocalPosition: {x: -115.98, y: 150.47, z: -84.14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 496760}
@@ -224,6 +225,21 @@ MonoBehaviour:
     stickToGroundHelperDistance: 0.6
     slowDownRate: 20
     airControl: 0
+--- !u!114 &11485376
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68940bf4b8c03c34db332dd120a6e650, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 100590}
+  continuePanel: {fileID: 0}
+  stressRate: 0.025
+  Stresslevel: 0
 --- !u!136 &13649468
 CapsuleCollider:
   m_ObjectHideFlags: 1

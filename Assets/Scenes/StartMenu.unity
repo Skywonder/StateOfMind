@@ -318,11 +318,39 @@ Prefab:
       objectReference: {fileID: 1048203563}
     - target: {fileID: 11407822, guid: 265f43ff985789348b317d4b00a6dbdd, type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Kuan(Toolkits)
+      value: MainGame
       objectReference: {fileID: 0}
     - target: {fileID: 175646, guid: 265f43ff985789348b317d4b00a6dbdd, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22403786, guid: 265f43ff985789348b317d4b00a6dbdd, type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 22403786, guid: 265f43ff985789348b317d4b00a6dbdd, type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 22403786, guid: 265f43ff985789348b317d4b00a6dbdd, type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22422544, guid: 265f43ff985789348b317d4b00a6dbdd, type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 117
+      objectReference: {fileID: 0}
+    - target: {fileID: 22422544, guid: 265f43ff985789348b317d4b00a6dbdd, type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -6
+      objectReference: {fileID: 0}
+    - target: {fileID: 22403786, guid: 265f43ff985789348b317d4b00a6dbdd, type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 22403786, guid: 265f43ff985789348b317d4b00a6dbdd, type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 570
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 265f43ff985789348b317d4b00a6dbdd, type: 2}
