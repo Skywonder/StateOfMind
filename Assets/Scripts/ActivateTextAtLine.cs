@@ -31,6 +31,7 @@ public class ActivateTextAtLine : MonoBehaviour {
                 theTextBox.ReloadScript(theText);
                 theTextBox.currentLine = startLine;
                 theTextBox.endAtLine = endLine;
+                theTextBox.EnableTextBox();
 
 
                 if (destroyWhenActivated)
