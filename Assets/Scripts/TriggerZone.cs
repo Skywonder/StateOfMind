@@ -7,6 +7,8 @@ public class TriggerZone : MonoBehaviour {
     public GameObject item; //<-this is the item that will appear at target location
     public GameObject targetLocation;
     public float spawntime = 5f;
+    public float despawntime = 2f;
+    public bool istriggered = false;
 
 
 	// Update is called once per frame
@@ -27,12 +29,23 @@ public class TriggerZone : MonoBehaviour {
       
 
         //reappear after a few sec at the target location
-        if (Time.deltaTime < spawntime)
+        if (istriggered == false)
         {
-            item.transform.position = targetLocation.transform.position;
-            item.SetActive(true);
+            if (Time.deltaTime < spawntime)
+            {
+                item.transform.position = targetLocation.transform.position;
+                item.SetActive(true);
+                istriggered = true;
+            }
         }
-
     }
 
+    void OnTriggerExit(Collider player)
+    {
+        if (Time.deltaTime < despawntime)
+        {
+            item.SetActive(false);
+            
+        }
+    }
 }
