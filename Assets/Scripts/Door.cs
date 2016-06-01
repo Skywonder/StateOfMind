@@ -8,6 +8,7 @@ public class Door : MonoBehaviour {
     public int DoorOpenAngle = -89;
     private bool open;
     private bool enter;
+    public bool specialdoor = true;//door that requires completing key component to unlock
 
     private Vector3 defaultRot;
     private Vector3 openRot;
@@ -21,12 +22,12 @@ public class Door : MonoBehaviour {
     //Main function
     void Update()
     {
-        if (open)
+        if (open && !specialdoor)
         {
             //Open door
             transform.eulerAngles = Vector3.Slerp(transform.eulerAngles, openRot, Time.deltaTime * smooth);
         }
-        else
+        else if (!specialdoor)
         {
             //Close door
             transform.eulerAngles = Vector3.Slerp(transform.eulerAngles, defaultRot, Time.deltaTime * smooth);
