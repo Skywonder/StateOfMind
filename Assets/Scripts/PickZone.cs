@@ -8,12 +8,12 @@ public class PickZone : MonoBehaviour {
     private bool avaliable = true;
     public GameObject player;
     public PlayerStats playerstats;
-
+    private bool enter = false;
 
     void Update() {
         playerstats = player.GetComponent<PlayerStats>();
 
-        if (Input.GetKey(KeyCode.F) && avaliable == true)
+        if (Input.GetKey(KeyCode.F) && avaliable == true && enter == true)
         {
             medicine.SetActive(false);
             avaliable = false;
@@ -29,10 +29,11 @@ public class PickZone : MonoBehaviour {
 
     void OnTriggerEnter(Collider player)
     {
-        
+        enter = true;
         //target is gonna deactive from the original place
         if (avaliable == true)
         {
+            
             Debug.Log("Pick up medicine valid");
             picked = true;
         }
