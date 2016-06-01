@@ -1,0 +1,9 @@
+Basic Instructions:
+Interact with objects by pressing the "F" key on the keyboard
+Control the player using the wasd keys on the keyboard
+There are some medications hidden around the upper floor, which can be consumed to temporaryly reduce the stress level
+Once the stress Meter Hits 100% you will faint.
+Introduction:
+You are trapped in the upper floor region as a child with Schizophrenic condition
+The goal is to find a way into the parent's room where the child can seek help for reliefing his Medical Condition
+Best Luck!
