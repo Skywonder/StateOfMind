@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class Door : MonoBehaviour {
 
@@ -9,6 +10,8 @@ public class Door : MonoBehaviour {
     private bool open;
     private bool enter;
     public bool specialdoor = true;//door that requires completing key component to unlock
+    public bool ending;
+    public string stage;
 
     private Vector3 defaultRot;
     private Vector3 openRot;
@@ -26,6 +29,11 @@ public class Door : MonoBehaviour {
         {
             //Open door
             transform.eulerAngles = Vector3.Slerp(transform.eulerAngles, openRot, Time.deltaTime * smooth);
+
+            if (ending)
+            {
+                SceneManager.LoadScene(stage);
+            }
         }
         else if (!specialdoor)
         {

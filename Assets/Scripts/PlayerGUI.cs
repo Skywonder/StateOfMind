@@ -17,9 +17,13 @@ public class PlayerGUI : MonoBehaviour {
         playerstats = player.GetComponent<PlayerStats>();
         
         stresslevel.text =  playerstats.Stresslevel.ToString();
-        key.text = "Key: " + key_count.ToString() + "/2";
+        key.text = "Key: " + key_count.ToString() + "/3";
 
-        if (key_count == 2)
+
+        //1st key: room
+        //2nd key: bathroom
+        //third key only appear after certain stress level...
+        if (key_count == 3)
         {
             door.GetComponent<Door>().specialdoor = false;
         }

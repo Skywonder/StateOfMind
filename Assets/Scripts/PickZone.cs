@@ -39,4 +39,10 @@ public class PickZone : MonoBehaviour {
         }
 
     }
+
+    void OnTriggerExit(Collider player)
+    {
+        enter = false;
+    }
+
 }

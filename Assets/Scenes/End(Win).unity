@@ -155,8 +155,8 @@ RectTransform:
   m_RootOrder: 3
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3, y: 17}
-  m_SizeDelta: {x: 574, y: 183}
+  m_AnchoredPosition: {x: 8, y: -18}
+  m_SizeDelta: {x: 477, y: 174}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &325916570
 GameObject:
@@ -348,8 +348,8 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000030517578, y: -0.00027466}
-  m_SizeDelta: {x: 739, y: 442}
+  m_AnchoredPosition: {x: 3.0000134, y: 0}
+  m_SizeDelta: {x: 629, y: 623}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &488739819
 MonoBehaviour:
@@ -415,7 +415,7 @@ RectTransform:
   m_RootOrder: 2
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2, y: 145}
+  m_AnchoredPosition: {x: 0, y: 143}
   m_SizeDelta: {x: 250, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &508617225
@@ -450,7 +450,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Bad Ending
+  m_Text: Ending
 --- !u!222 &508617226
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -718,7 +718,7 @@ RectTransform:
   m_RootOrder: 5
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 210, y: -121}
+  m_AnchoredPosition: {x: 166.5, y: -167}
   m_SizeDelta: {x: 160, y: 57}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1022141089
@@ -837,8 +837,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0025024414, y: -0.0001220706}
-  m_SizeDelta: {x: 738.99, y: 442}
+  m_AnchoredPosition: {x: -0.00051117, y: 0}
+  m_SizeDelta: {x: 635, y: 623}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1198609162
 MonoBehaviour:
@@ -906,7 +906,7 @@ RectTransform:
   m_RootOrder: 4
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -201.25, y: -121}
+  m_AnchoredPosition: {x: -147.75, y: -167}
   m_SizeDelta: {x: 165.5, y: 57}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1508749361

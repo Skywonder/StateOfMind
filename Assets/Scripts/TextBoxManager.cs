@@ -11,7 +11,7 @@ public class TextBoxManager : MonoBehaviour {
     public int endAtLine;
     public bool isActive;
     public PlayerStats player;
-
+    public bool endscreens;
     private bool isTyping = false;
     private bool cancelTyping = false;
 
@@ -36,7 +36,10 @@ public class TextBoxManager : MonoBehaviour {
             
         }
         else {
-            DisableTextBox();
+            if (!endscreens)
+            {
+                DisableTextBox();
+            }
         }
 
     }
@@ -57,7 +60,10 @@ public class TextBoxManager : MonoBehaviour {
 
                 if (currentLine > endAtLine)
                 {
-                    DisableTextBox();
+                    if (!endscreens)
+                    {
+                        DisableTextBox();
+                    }
 
                 }
                 else

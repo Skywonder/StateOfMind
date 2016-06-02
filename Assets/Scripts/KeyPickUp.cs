@@ -19,7 +19,6 @@ public class KeyPickUp : MonoBehaviour {
         if (other.name == "Player")
         {
             Debug.Log("Picked up key");
-            
             player.GetComponent<PlayerGUI>().key_count += 1;
             key.SetActive(false);
         }

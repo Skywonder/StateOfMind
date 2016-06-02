@@ -1,20 +1,22 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PlayerStats : MonoBehaviour {
     public GameObject player;
-    public GameObject continuePanel;
+    //public GameObject continuePanel;
    // public GameObject medicine;
     public float stressRate;
     bool pausescript;
     public float Stresslevel = 0f;
     private float maxStresslevel = 100f;
     private bool Paused = false;
+    public string stage;
     
 
 	// Use this for initialization
 	void Start () {
-        continuePanel.SetActive(false);
+        //continuePanel.SetActive(false);
 	}
 
     // Update is called once per frame
@@ -42,12 +44,13 @@ public class PlayerStats : MonoBehaviour {
     {
             //stop stress meter 
             Debug.Log("The player fainted");
-            //pause the game and dispaly continue menu
-            continuePanel.SetActive(true);
-            Paused = true;
-            Time.timeScale = 0.0f; 
-            //this.gameObject.SetActive(false);
-             
+            SceneManager.LoadScene(stage);
+        //pause the game and dispaly continue menu
+        //continuePanel.SetActive(true);
+        //Paused = true;
+        //Time.timeScale = 0.0f; 
+        //this.gameObject.SetActive(false);
+
     }
 
     //label gameobjects in the game scene with stress tag
