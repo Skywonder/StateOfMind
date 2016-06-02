@@ -836,7 +836,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11446426, guid: 280667dc676623c4eb8f6f6e1d713861, type: 2}
       propertyPath: endAtLine
-      value: 8
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 280667dc676623c4eb8f6f6e1d713861, type: 2}
@@ -3043,7 +3043,7 @@ Transform:
   - {fileID: 136064213}
   - {fileID: 707914727}
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 33
 --- !u!1001 &685372938
 Prefab:
   m_ObjectHideFlags: 0
@@ -3743,7 +3743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -6802,7 +6802,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 28
 --- !u!4 &1647664370 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400004, guid: d04c2cc3362ffce46a09fd88a4e25e7a, type: 3}
@@ -7239,7 +7239,7 @@ RectTransform:
   - {fileID: 1768657600}
   - {fileID: 1550338865}
   m_Father: {fileID: 0}
-  m_RootOrder: 34
+  m_RootOrder: 35
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -7448,7 +7448,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11485376, guid: daa65949d956c8f468800dd983287de0, type: 2}
       propertyPath: stressRate
-      value: 0.05
+      value: 0.025
       objectReference: {fileID: 0}
     - target: {fileID: 11485376, guid: daa65949d956c8f468800dd983287de0, type: 2}
       propertyPath: heart1
@@ -7466,6 +7466,10 @@ Prefab:
       propertyPath: faint
       value: 
       objectReference: {fileID: 1071764093}
+    - target: {fileID: 11485376, guid: daa65949d956c8f468800dd983287de0, type: 2}
+      propertyPath: Stresslevel
+      value: -25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: daa65949d956c8f468800dd983287de0, type: 2}
   m_IsPrefabParent: 0
@@ -8379,7 +8383,7 @@ Transform:
   - {fileID: 91569944}
   - {fileID: 2043542730}
   m_Father: {fileID: 0}
-  m_RootOrder: 33
+  m_RootOrder: 34
 --- !u!4 &2073809637 stripped
 Transform:
   m_PrefabParentObject: {fileID: 462478, guid: 0d4f99a6cd94308488ecf8609f99a740, type: 2}
