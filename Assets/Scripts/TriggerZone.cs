@@ -11,11 +11,12 @@ public class TriggerZone : MonoBehaviour {
     public bool istriggered = false;
     public PlayerStats playerstress;
     public GameObject player;
-
+    public float stressrate;
+    public float originalrate;
 
 	// Update is called once per frame
 	void Update () {
-
+	    
 	}
 
 
@@ -26,13 +27,14 @@ public class TriggerZone : MonoBehaviour {
         //target is gonna disappear from the original place
         item.SetActive(false);
 
-        //increase stress level rate
+
         playerstress = player.GetComponent<PlayerStats>();
+
 
         //reappear after a few sec at the target location
         if (istriggered == false)
         {
-            playerstress.stressRate = .75f;
+            playerstress.stressRate = stressrate;
             if (Time.deltaTime < spawntime)
             {
                 item.transform.position = targetLocation.transform.position;
@@ -40,6 +42,7 @@ public class TriggerZone : MonoBehaviour {
                 istriggered = true;
             }
         }
+        
     }
 
     void OnTriggerExit(Collider player)
@@ -49,6 +52,7 @@ public class TriggerZone : MonoBehaviour {
             item.SetActive(false);
             
         }
-       playerstress.stressRate = .01f;
+
+        playerstress.stressRate = originalrate;
     }
 }
