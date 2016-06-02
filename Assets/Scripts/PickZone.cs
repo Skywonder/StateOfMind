@@ -9,12 +9,19 @@ public class PickZone : MonoBehaviour {
     public GameObject player;
     public PlayerStats playerstats;
     private bool enter = false;
+    public GameObject med;
+
+    void Start() {
+        med.GetComponent<AudioSource>().mute = true;
+    }
 
     void Update() {
         playerstats = player.GetComponent<PlayerStats>();
 
         if (Input.GetKey(KeyCode.F) && avaliable == true && enter == true)
         {
+
+            med.GetComponent<AudioSource>().mute = false;
             medicine.SetActive(false);
             avaliable = false;
             playerstats.Stresslevel -= 25.0f;
@@ -23,6 +30,7 @@ public class PickZone : MonoBehaviour {
                 playerstats.Stresslevel = 0.0f;
             }
             Debug.Log("Pick up medicine reduce stress level");
+            
         }
     }
 
@@ -43,6 +51,7 @@ public class PickZone : MonoBehaviour {
     void OnTriggerExit(Collider player)
     {
         enter = false;
+        med.GetComponent<AudioSource>().mute = true;
     }
 
 }

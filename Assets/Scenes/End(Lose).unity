@@ -578,19 +578,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22460418, guid: 0d158655c26247b46b8a82394579f518, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -0.00086002774
+      value: 0.0005073501
       objectReference: {fileID: 0}
     - target: {fileID: 22460418, guid: 0d158655c26247b46b8a82394579f518, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 749.47
+      value: 623
       objectReference: {fileID: 0}
     - target: {fileID: 22460418, guid: 0d158655c26247b46b8a82394579f518, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -0.000022411346
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22460418, guid: 0d158655c26247b46b8a82394579f518, type: 2}
       propertyPath: m_SizeDelta.x
-      value: 800
+      value: 665
       objectReference: {fileID: 0}
     - target: {fileID: 22475852, guid: 0d158655c26247b46b8a82394579f518, type: 2}
       propertyPath: m_AnchoredPosition.x
@@ -598,11 +598,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22475852, guid: 0d158655c26247b46b8a82394579f518, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -174
+      value: -157
       objectReference: {fileID: 0}
     - target: {fileID: 22453006, guid: 0d158655c26247b46b8a82394579f518, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -174
+      value: -157
       objectReference: {fileID: 0}
     - target: {fileID: 22453006, guid: 0d158655c26247b46b8a82394579f518, type: 2}
       propertyPath: m_AnchoredPosition.x
@@ -610,7 +610,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22465660, guid: 0d158655c26247b46b8a82394579f518, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 204
+      value: 163.5
       objectReference: {fileID: 0}
     - target: {fileID: 22465660, guid: 0d158655c26247b46b8a82394579f518, type: 2}
       propertyPath: m_AnchoredPosition.x
@@ -634,7 +634,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22302572, guid: 0d158655c26247b46b8a82394579f518, type: 2}
       propertyPath: m_RenderMode
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22484272, guid: 0d158655c26247b46b8a82394579f518, type: 2}
       propertyPath: m_LocalScale.x
@@ -650,7 +650,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11413906, guid: 0d158655c26247b46b8a82394579f518, type: 2}
       propertyPath: m_UiScaleMode
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22465660, guid: 0d158655c26247b46b8a82394579f518, type: 2}
       propertyPath: m_SizeDelta.x
@@ -715,6 +715,10 @@ Prefab:
     - target: {fileID: 22475852, guid: 0d158655c26247b46b8a82394579f518, type: 2}
       propertyPath: m_SizeDelta.x
       value: 206
+      objectReference: {fileID: 0}
+    - target: {fileID: 11422546, guid: 0d158655c26247b46b8a82394579f518, type: 2}
+      propertyPath: m_PreserveAspect
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0d158655c26247b46b8a82394579f518, type: 2}

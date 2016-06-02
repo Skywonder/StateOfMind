@@ -12,16 +12,24 @@ public class PlayerStats : MonoBehaviour {
     private float maxStresslevel = 100f;
     private bool Paused = false;
     public string stage;
+    public GameObject heart1;
+    public GameObject heart2;
+    public GameObject heart3;
+    public GameObject faint;
     
 
 	// Use this for initialization
 	void Start () {
         //continuePanel.SetActive(false);
-	}
+        heart1.GetComponent<AudioSource>().mute = false;
+        heart2.GetComponent<AudioSource>().mute = true;
+        heart3.GetComponent<AudioSource>().mute = true;
+        faint.GetComponent<AudioSource>().mute = true;
+    }
 
     // Update is called once per frame
     void Update() {
-
+        
         pausescript = GameObject.Find("PauseManager").GetComponent<PauseScript>().isPaused;
 
         if (Paused == false && !pausescript)//if this is false
@@ -37,7 +45,29 @@ public class PlayerStats : MonoBehaviour {
 
         if (Time.timeScale == 0)
             return;
-        
+
+        if (Stresslevel <= 30)
+        {
+            heart1.GetComponent<AudioSource>().mute = false;
+            heart2.GetComponent<AudioSource>().mute = true;
+            heart3.GetComponent<AudioSource>().mute = true;
+        }
+        else if (Stresslevel > 30 && Stresslevel <= 70)
+        {
+            heart1.GetComponent<AudioSource>().mute = true;
+            heart2.GetComponent<AudioSource>().mute = false;
+            heart3.GetComponent<AudioSource>().mute = true;
+        }
+        else if (Stresslevel > 70)
+        {
+            heart1.GetComponent<AudioSource>().mute = true;
+            heart2.GetComponent<AudioSource>().mute = true;
+            heart3.GetComponent<AudioSource>().mute = false;
+        }
+        else
+        {
+            faint.GetComponent<AudioSource>().mute = false;
+        }
     }
 
      void PauseGame(bool state)

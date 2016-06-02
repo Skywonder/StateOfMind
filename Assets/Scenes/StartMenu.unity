@@ -228,6 +228,18 @@ Prefab:
       propertyPath: m_SizeDelta.y
       value: 623
       objectReference: {fileID: 0}
+    - target: {fileID: 22390850, guid: 265f43ff985789348b317d4b00a6dbdd, type: 2}
+      propertyPath: m_RenderMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22390850, guid: 265f43ff985789348b317d4b00a6dbdd, type: 2}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1296267289}
+    - target: {fileID: 22390850, guid: 265f43ff985789348b317d4b00a6dbdd, type: 2}
+      propertyPath: m_PixelPerfect
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 265f43ff985789348b317d4b00a6dbdd, type: 2}
   m_IsPrefabParent: 0
@@ -327,7 +339,7 @@ Camera:
   m_GameObject: {fileID: 1296267285}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 4
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0.019607844}
   m_NormalizedViewPortRect:
     serializedVersion: 2
