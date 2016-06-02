@@ -1842,7 +1842,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11446468, guid: a521f2a175e6dc742a5ec3e7db550e54, type: 2}
       propertyPath: stressrate
-      value: 0.1
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a521f2a175e6dc742a5ec3e7db550e54, type: 2}
@@ -2906,7 +2906,7 @@ Transform:
   - {fileID: 757978856}
   - {fileID: 1647664370}
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 29
 --- !u!1 &668185749
 GameObject:
   m_ObjectHideFlags: 0
@@ -3043,7 +3043,7 @@ Transform:
   - {fileID: 136064213}
   - {fileID: 707914727}
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 31
 --- !u!1001 &685372938
 Prefab:
   m_ObjectHideFlags: 0
@@ -6802,7 +6802,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 25
 --- !u!4 &1647664370 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400004, guid: d04c2cc3362ffce46a09fd88a4e25e7a, type: 3}
@@ -7239,7 +7239,7 @@ RectTransform:
   - {fileID: 1768657600}
   - {fileID: 1550338865}
   m_Father: {fileID: 0}
-  m_RootOrder: 32
+  m_RootOrder: 34
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -7812,7 +7812,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 188698, guid: 11adee7b4174532449406190fa6f453b, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 163410, guid: 11adee7b4174532449406190fa6f453b, type: 2}
       propertyPath: m_Name
@@ -8336,7 +8336,7 @@ Transform:
   - {fileID: 1245549125}
   - {fileID: 686563995}
   m_Father: {fileID: 0}
-  m_RootOrder: 35
+  m_RootOrder: 36
 --- !u!1 &2056262896
 GameObject:
   m_ObjectHideFlags: 0
@@ -8379,7 +8379,7 @@ Transform:
   - {fileID: 91569944}
   - {fileID: 2043542730}
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 33
 --- !u!4 &2073809637 stripped
 Transform:
   m_PrefabParentObject: {fileID: 462478, guid: 0d4f99a6cd94308488ecf8609f99a740, type: 2}
@@ -8788,6 +8788,10 @@ Prefab:
     - target: {fileID: 11441754, guid: 5dd1e2b71b7a2324f986169b3911853c, type: 2}
       propertyPath: originalrate
       value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 11441754, guid: 5dd1e2b71b7a2324f986169b3911853c, type: 2}
+      propertyPath: spawntime
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5dd1e2b71b7a2324f986169b3911853c, type: 2}
