@@ -621,6 +621,14 @@ Prefab:
       propertyPath: textFile
       value: 
       objectReference: {fileID: 4900000, guid: c7da7ea9d880a3144a5d59953af67ded, type: 3}
+    - target: {fileID: 11446426, guid: 280667dc676623c4eb8f6f6e1d713861, type: 2}
+      propertyPath: endAtLine
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 11446426, guid: 280667dc676623c4eb8f6f6e1d713861, type: 2}
+      propertyPath: endscreens
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 280667dc676623c4eb8f6f6e1d713861, type: 2}
   m_IsPrefabParent: 0
